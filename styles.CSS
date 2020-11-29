@@ -1,0 +1,54 @@
+/* boxes should wrap one the min width exceeds 468px */
+@media(min-width:468px){
+.container1
+{
+    display : flex;
+     /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      
+      flex-direction:column;
+      */
+}
+.container2
+{
+    display : flex;
+    justify-content : space-around;
+}
+.container3{
+    display:flex;  
+    /* for smaller screens the box will go in next line. we can o this by setting flex-wrap : wrap */
+    flex-wrap:wrap;  
+    justify-content:space-between;
+  }
+.container1 div, .container2 div, .container3 div
+{
+    border : 1px solid #aaa;
+    padding : 10px;
+}
+.box1
+{
+    flex : 2;
+    order : 2;
+}
+.box2
+{
+    flex : 1;
+    order : 1;
+}
+.box3
+{
+    flex : 1;
+    order : 3;
+}
+.container2-box
+{
+    /* flex-basis is equvalent to width */
+    flex-basis : 27%;
+}
+.container3-box
+{
+    flex-basis : 12%;
+}
+}
